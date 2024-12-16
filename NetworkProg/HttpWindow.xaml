@@ -1,0 +1,20 @@
+﻿<Window x:Class="NetworkProg.HttpWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:NetworkProg"
+        mc:Ignorable="d"
+        Title="HttpWindow" Height="500" Width="450" WindowStartupLocation="CenterScreen">
+    
+    <StackPanel>
+        <Button x:Name="Get1Button" Content="GET" Margin="10 6" Click="Get1Button_Click"/>
+        <Button x:Name="RatesXML" Content="RATES XML" Margin="10 6" Click="RatesXML_Click"/>
+        <Button x:Name="RatesJSON" Content="RATES JSON" Margin="10 6" Click="RatesJSON_Click"/>
+        <Button x:Name="RatesButton" Content="ALL RATES" Margin="10 6" Click="RatesButton_Click"/>
+        <Button x:Name="PopularButton" Content="EUR USD XAU" Margin="10 6" Click="PopularButton_Click"/>
+        <ScrollViewer MaxHeight="330" VerticalScrollBarVisibility="Auto">
+            <TextBlock x:Name="textBlock1" FontFamily="Courier New"/>
+        </ScrollViewer>
+    </StackPanel>
+</Window>

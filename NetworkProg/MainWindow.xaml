@@ -6,23 +6,26 @@
         xmlns:local="clr-namespace:NetworkProg"
         mc:Ignorable="d"
         Title="MainWindow" Height="450" Width="300">
-    <StackPanel Orientation="Vertical">
-        <Label Content="Мережне програмування"
-           HorizontalAlignment="Center"
-           FontWeight="DemiBold"/>
-        <GroupBox Header="Сокети">
+    <StackPanel>
+        <Label Content="Сетевое программирование" FontSize="18" FontWeight="SemiBold" HorizontalAlignment="Center"/>
+        <GroupBox Header="Сокеты">
             <UniformGrid Columns="2">
-                <Button x:Name="ServerButton"
-                    Content="Сервер"
-                    Margin="10 5"
-                    Padding="0 4 0 7"
-                    Click="ServerButton_Click"/>
-                <Button x:Name="ClientButton"
-                    Content="Клієнт"
-                    Margin="10 5"
-                    Padding="0 4 0 7"
-                    Click="ClientButton_Click"/>
+                <Button x:Name="ServerBtn" Content="Сервер" Margin="10 5" Padding="0 3 0 5" Click="ServerBtn_Click"/>
+                <Button x:Name="ClientBtn" Content="Клиент" Margin="10 5" Padding="0 3 0 5" Click="ClientBtn_Click"/>
             </UniformGrid>
         </GroupBox>
+        <GroupBox Header="Gmail" Margin="0 10 0 0">
+            <UniformGrid Columns="2">
+                <Button x:Name="GmailBtn" Content="Email" Margin="10 5" Padding="0 3 0 5" Click="GmailBtn_Click"/>
+                <Button x:Name="GmailConfirmBtn" Content="Email (Confirm)" Margin="10 5" Padding="0 3 0 5" Click="GmailConfirmBtn_Click"/>
+            </UniformGrid>
+        </GroupBox>
+        <GroupBox Header="Http/API" Margin="0 10 0 0">
+            <UniformGrid Columns="1">
+                <Button x:Name="HttpBtn" Content="HTTP" Margin="10 5" Padding="0 3 0 5" Click="HttpBtn_Click"/>
+                <Button x:Name="CryptoBtn" Content="Crypto Graph" Margin="10 5" Padding="0 3 0 5" Click="CryptoBtn_Click"/>
+            </UniformGrid>
+        </GroupBox>
+
     </StackPanel>
 </Window>
