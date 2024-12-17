@@ -1,9 +1,0 @@
-{
-  "smtp": {
-    "host": "smtp.gmail.com",
-    "port": 587,
-    "email": "vasyatarn13@gmail.com",
-    "password": "cqnt jjgp odqf tepi",
-    "ssl": true
-  }
-}
